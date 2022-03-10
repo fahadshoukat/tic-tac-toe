@@ -1,8 +1,8 @@
 import React from "react";
 
-const Square = ({ handleSquareClick, value }) => {
-    
-  return <button onClick={handleSquareClick}>
+const Square = ({ onClick, value }) => {
+
+  return <button onClick={onClick}>
       {value}
     </button>;
 };
