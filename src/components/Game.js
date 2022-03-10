@@ -10,7 +10,17 @@ const Game = () => {
 
     const winner = calculateWinner(board)
   
-    const handleClick = () => {
+    const handleClick = (i) => {
+
+        const tempBoard = [...board];
+
+        // if user click an occupied square or if game is won, return
+        if(winner || tempBoard[i]) return;
+
+        // Put an X or an O in the clicked square
+        tempBoard[i] = xIsNext ? 'X' : 'O';
+        setBoard(tempBoard);
+        setXIsNext(!xIsNext);
 
     }
 
