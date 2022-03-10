@@ -1,5 +1,5 @@
 import './App.css';
 
-const App = () => <div>App Component</div>
+const App = () => <Game />
 
 export default App;
