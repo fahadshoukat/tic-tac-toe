@@ -6,7 +6,9 @@ const styles = {
     width: '200px',
     margin: '20px auto'
 }
-
+const h1Style = {
+    textAlign: 'center'
+}
 const Game = () => {
   const [board, setBoard] = useState(Array(9).fill(null));
 
@@ -35,6 +37,7 @@ const Game = () => {
 
   return (
     <>
+    <h1 style={h1Style}>Tic Tac Toe</h1>
       <Board squares={board} onClick={handleClick} />
       <div style={styles}>
           <p>
